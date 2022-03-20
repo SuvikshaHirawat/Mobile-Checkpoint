@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+    /* Font */
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 500;
+    /* background image */
+    background-image: url("../images/backgroundimg.jpg");
+    background-size: cover;
+    background-color: lightblue;
+}
+
+h1{
+	font-size: 40px;
+	font-weight: bold;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+nav li {
+    padding: 12px;
+    background-color: lightblue;
+	width:25%;
+	border:1px dashed slategray;
+	display: inline-block;
+	width: 20%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    }
+
+nav li a{
+    text-decoration: none;
+}
+
+.active{
+    background-color:lightgreen;
+    font-weight:bold;
+    border:2px solid black;
+    text-decoration:underline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* 4. Add style to your images focusing on the box model*/
+
+img{
+    margin: 8px;
+    border: 4px dotted skyblue;
+    height: 200px;
+    width:auto;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+/* 5. Add a hover style to your images*/
+
+img:hover{
+    filter:grayscale();
+    border: dashed;
+}
+
+a:visited{color:#0000FF}
+
+/* header, nav, main, h1, footer{
+	border: 2px solid grey;
+	margin: 10px 0;
+} */
+
+main, h1, footer{
+	border: 1px solid darkolivegreen;
+	margin: 10px 0;
+}
+p, h1, h2 {
+    padding: 10px;
+    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* MOBILE CHECKPOINT */
+
+/* .card{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    row-gap: 30px;
+  } */
+
+/* .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+} */
+
+
+
+/* animation */
+/* #logo{
+    animation: mymove 5s;
+}
+
+@keyframes mymove {
+    from {width: 25px; opacity: 0;}
+    to {width: 475px; opacity: 1;}
+} */
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#animate-area	{
+	width: 560px;
+	height: 400px;
+	background-image: url("../images/backgroundimg.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
+
+/* check??????????????????????????????????? */
+@media (prefers-reduced-motion) {
+    .animation {
+      animation: none;
+    }
+  }
+
+
+  /* contact form */
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 8px; 
+    border: 2px dotted grey; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 16px;
+    /* resize: vertical */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    border: black;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+      width: 35%;
+    background-color: lightskyblue;
+    padding: 30px;
+    margin: 0 auto;
+  }
