@@ -3,10 +3,11 @@
 body{
 	margin:1%;
 	padding:1%;
-	font-size:150%;
     /* Font */
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 500;
+    font-size:150%;
+
     /* background image */
     background-image: url("../images/backgroundimg.jpg");
     background-size: cover;
@@ -16,16 +17,14 @@ body{
 h1{
 	font-size: 40px;
 	font-weight: bold;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 nav li {
-    padding: 12px;
+    padding: 10px;
     background-color: lightblue;
+    border: 1px solid magenta;
 	width:25%;
-	border:1px dashed slategray;
 	display: inline-block;
 	width: 20%;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     }
 
 nav li a{
@@ -35,13 +34,11 @@ nav li a{
 .active{
     background-color:lightgreen;
     font-weight:bold;
-    border:2px solid black;
-    text-decoration:underline;
+    border:2px dotted slategray;
+    text-decoration: underline;
     text-align: center;
     text-transform: uppercase;
 }
-
-/* 4. Add style to your images focusing on the box model*/
 
 img{
     margin: 8px;
@@ -52,8 +49,7 @@ img{
     border-radius: 2px;
 }
 
-/* 5. Add a hover style to your images*/
-
+/* image hover */
 img:hover{
     filter:grayscale();
     border: dashed;
@@ -61,62 +57,33 @@ img:hover{
 
 a:visited{color:#0000FF}
 
-/* header, nav, main, h1, footer{
-	border: 2px solid grey;
-	margin: 10px 0;
-} */
-
-main, h1, footer{
-	border: 1px solid darkolivegreen;
-	margin: 10px 0;
-}
 p, h1, h2 {
     padding: 10px;
-    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* MOBILE CHECKPOINT */
 
-/* .card{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    row-gap: 30px;
-  } */
-
-/* .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-self: center;
-} */
-
-
-
 /* animation */
-/* #logo{
-    animation: mymove 5s;
+.animation{
+    animation: mymove 3s;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 @keyframes mymove {
-    from {width: 25px; opacity: 0;}
-    to {width: 475px; opacity: 1;}
-} */
-
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
+        0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
 }
 
-#animate-area	{
-	width: 560px;
-	height: 400px;
-	background-image: url("../images/backgroundimg.jpg");
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-
-	animation: animatedBackground 40s linear infinite;
+.icon{
+    text-shadow: orange;
+    text-decoration: wavy;
 }
 
 /* check??????????????????????????????????? */
@@ -130,16 +97,15 @@ p, h1, h2 {
   /* contact form */
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; 
-    padding: 8px; 
-    border: 2px dotted grey; 
-    box-sizing: border-box; 
-    margin-top: 10px; 
+    width: 100%;
+    padding: 8px;
+    border: 2px dotted grey;
+    box-sizing: border-box;
+    margin-top: 10px;
     margin-bottom: 16px;
     /* resize: vertical */
   }
-  
-  /* Style the submit button with a specific background color etc */
+  /* submit button */
   input[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -147,13 +113,10 @@ input[type=text], select, textarea {
     border: none;
     cursor: pointer;
   }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
     border: black;
   }
-  
   /* Add a background color and some padding around the form */
   .container {
       width: 35%;
@@ -161,3 +124,134 @@ input[type=text], select, textarea {
     padding: 30px;
     margin: 0 auto;
   }
+
+
+/* FLEXBOX FOR EDITS */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 175px ;
+}
+
+.gallery img{
+    border: none;
+    margin: 15px;
+    width: auto;
+}
+
+/* FLEXBOX FOR INDIA*/
+.galleryindia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.card{
+    flex-basis: 450px;
+    padding: 20px 20px 20px 20px;
+}
+
+img{
+    width :350px;
+    height: 350px ;
+}
+
+/* FLEXBOX FOR VOLCANO*/
+.volcanosection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.volcanosection img{
+    border: none;
+    margin: 15px;
+    width: auto;
+}
+
+/* GRID FOR HOME*/
+.homegrid{
+    display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  row-gap: 30px;
+  padding: 20px 550px 20px 550px;
+  }
+
+.homegriditem {
+margin: 12px;
+background: whitesmoke;
+border-radius: 12px;
+padding: 25px 25px 25px 25px;
+
+grid-column: 1/ span 3;
+}
+
+footer, h1{
+    text-align: center;
+}
+
+.headshot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.navbar{
+    padding: 20px 350px 20px 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+@media only screen and (min-width: 900px) {
+.navbar{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+p{
+    line-height: 25px;
+    text-align: center;
+}
+
+#volcano{
+    text-align: center;
+    padding: 35px;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+/* GRID FOR HOME*/
+/* .homegrid{
+    display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  row-gap: 30px;
+  padding: 20px;
+  }
+
+.homegriditem {
+margin: 12px;
+background: whitesmoke;
+border-radius: 12px;
+padding: 25px 25px 25px 25px;
+
+grid-column: 1/ span 2;
+} */
+
+}
+

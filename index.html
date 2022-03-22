@@ -7,20 +7,23 @@
 	<link rel="stylesheet" href="css/html5reset.css">
    	<link rel="stylesheet" href="css/style.css">
     <title>About Me</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGD77P9YDG"></script>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6Z463L2YJ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-CGD77P9YDG');
+    gtag('config', 'G-L6Z463L2YJ');
     </script>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-   
-</head>
+    
+    </head>
 
 
 <body>
@@ -29,27 +32,39 @@
     <header>
         <nav>
 			<ul>
+                <div class="navbar">
 				<li class="active"><a href = "index.html" >About Me</a></li>
 				<li><a href = "india.html">From Home</a></li>
 				<li><a href = "abstract.html">Abstract Edits</a></li>
 				<li><a href = "contact.html">Get in touch</a></li>
+            </div>
 			</ul>
 		</nav>
         <h1>Hi!</h1>
     </header>
 
-    <main id="main">
+    <main id="main" class="homegrid">
+        <div class="homegriditem">
         <p>Hi im suviksha:) I am a graduate student at the University of Michigan on the UX Research and Design track. I grew up in India in the pleasant easy climate of Bangalore. I studied architecture for 5 years and love the nostalgic recounts of 80’s interiors and design. I've played a sport all my life- football at first and now ultimate frisbee. My idea of fun is to ORGANIZATION- and volunteer my services to anyone who may need it. There is nothing more I like than the sun streaming in through a large window and that concludes this paragraph of random facts about me.</p>
-        <img src = "images/pictureofme.jpg" alt="Headshot of Suviksha Hirawat" width="200"/>
+        </div>
+
+        <div class="homegriditem">
+        <img src = "images/pictureofme.jpg" alt="Headshot of Suviksha Hirawat" width="200" class="headshot"/>
         <p>Here is a photograph of what I look like and this is the same one I use on my whatsapp, Linkedin, zoom, you name it. When you find the one- you find the one.</p>
+        </div>
+
+      
+    <div class="homegriditem">
         <p>Onto why you're here- this is my photography blog.
             I have two sections as of now: An ‘edits’ section that displays my experimentations with the app Lightroom and ‘ Frome Home’ is a repository of sweet memories from a well-back home.
             I hope the edits make you feel uneasy and the photos from home make you feel warm.
             Hurry along now- take a look-<p>
+            </div>
     </main>
 
     <footer>
-        <p>Suviksha Hirawat</p>
+        <p>Suviksha Hirawat | Email: suviksha@umich.edu</p>
+
     </footer>
 </body>
 </html>
